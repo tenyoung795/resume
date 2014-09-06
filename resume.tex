@@ -1,0 +1,172 @@
+\documentclass[letterpaper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Droid Sans} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{longtable}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+\urlstyle{same}
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+\par{\centering{\Huge Ten-Young Guh}\par} % Your name
+\par{\centering{
+    67-62 Exeter St, Forest Hills, NY, 11375
+    | \href{mailto:tenyoung795@gmail.com}{tenyoung795@gmail.com}
+    | 1-347-756-8608
+}\par}
+\par{\centering{
+    LinkedIn: \url{https://www.linkedin.com/profile/view?id=201881408}
+}\par}
+\par{\centering{
+    Github: \url{http://github.com/tenyoung795}
+}\par}
+
+\section{Education}
+
+\begin{longtable}{r|p{4.25in}}	
+    September 2012-May 2016 (expected) & \textbf{Binghamton University, State University of New York} \\
+    & \textbf{The Thomas J. Watson School of Engineering} \\
+    & \textbf{Bachelor of Science in Engineering} \\
+    & 3.952/4.000 GPA, Dean's List \\
+    & Relevant coursework: Computer Systems 1 to 3, Data Structures and Algorithms,
+    Ernst \& Young Trajectory Program \footnotesize{(a joint management-computer science program)} \\
+
+    \multicolumn{2}{c}{} \\
+
+    September 2008-May 2012 & \textbf{Stuyvesant High School, New York, NY} \\
+    & Relevant coursework: Computer Graphics, System Level Programming \\
+\end{longtable}
+
+\section{Internship Experience}
+
+\begin{longtable}{r|p{4.5in}}
+    June 2014-August 2014 & \textbf{Software-Engineer-in-Test Intern at Google} \\
+    New York, NY & Programmed version 0 of an iOS app \\
+    & \begin{itemize}
+        \item Implemented user interface using Google's Material design
+        \item Persisted data onto the device using Core Data, Apple's standard data persistence framework
+        \item Tested user interface using Keep-It-Functional
+        \item Managed code using Git wrapper around Perforce
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    June 2013-September 2013 & \textbf{Software Engineering Intern at Energyhub} \\
+    Brooklyn, NY & \begin{itemize}
+        \item Programmed a proxy server for Carrier's thermostat API in Go
+        \item Implemented an endpoint for Carrier's theromstat API
+        \item
+            Implemented a Southern California Edison advertisement from a Spring thermostat server
+            to an Android thermostat app
+        \item
+            Integrated Carrier’s thermostat project programmed in Flex into a Jenkins environment;
+            implemented the project’s first unit test
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    January 2013 & \textbf{Programming Intern at Halo Neuro} \\
+    New York, NY & \begin{itemize}
+        \item Began programming the iPhone app for the Halo headband
+        \item Programmed a reaction time game in Flash called React
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    July 2012-August 2012 & \textbf{Engineering Intern at Peek} \\
+    New York, NY & \begin{itemize}
+        \item Programmed an Android game in which you control a taxi driver in Delhi
+        \item Programmed the client-side of an app store in Lua for a MediaTek phone
+    \end{itemize}
+\end{longtable}
+
+\section{Personal Team Projects}
+
+\begin{longtable}{r|p{4.5in}}
+    April 2014-Present & \textbf{Crowdshop Android App} \\
+    Started at Bitcamp & \textbf{Github: \url{https://github.com/leeeonlee/crowdshop-app}} \\
+    Hackathon at UMD & Android app to pay friends to shop for you with an optional reward \\
+    & \begin{itemize}
+        \item Implemented most of user interface
+        \item Handled HTTP requests in the background using RoboSpice
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    April 2014 & \textbf{Schedulizer} \\
+    Started at HackBU & \textbf{Github: \url{https://github.com/leeeonlee/fsched}} \\
+    Hackathon at SUNY Binghamton & Web app to assist Binghamton students plan their schedule \\
+    & Implemented course reference-matching algorithm \\ 
+    & \begin{itemize}
+        \item Matched a course's references by section
+        \item Matched lectures with the correct activity
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    April 2014 & \textbf{Rotapong} \\
+    Started at PennApps  & \textbf{Github: \url{https://github.com/tenyoung795/Rotapong}} \\
+    Hackathon at UPenn & Android version of Pong using device rotation to control the paddle \\
+    & \begin{itemize}
+        \item Drew objects using OpenGL
+        \item Implemented a peer-to-peer protocol using UDP to support multiplayer
+    \end{itemize}
+
+\end{longtable}
+
+\section{Educational Individual Projects}
+
+\begin{longtable}{r|p{4.5in}}
+
+    March 2014 & \textbf{Branch Predictor Simulator} \\
+    Computer Systems 3 & \textbf{Github: TODO} \\
+    SUNY Binghamton & Simulator for various branch predictors, including the YAGS predictor \\
+    & \begin{itemize}
+        \item Heaviliy utilized C++11 features such as type inference, lambdas, and variadic templates
+        \item Tested using Python script
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    August 2013 & \textbf{Malloc Lab} \\
+    Computer Systems 2 & \textbf{Github: \url{https://github.com/tenyoung795/malloclab}} \\
+    SUNY Binghamton & Implementation of C malloc \\
+    & \begin{itemize}
+        \item Segregated free lists by size
+        \item Doubly-linked free lists
+        \item Singly-linked heap blocks
+    \end{itemize} \\
+
+    \multicolumn{2}{c}{} \\
+
+    Spring 2012 & \textbf{MDL} \\
+    Computer Graphics & \textbf{Github: \url{https://github.com/tenyoung795/mdl}} \\
+    Stuyvesant HS & Object shader and renderer using course's modeling language \\
+    & \begin{itemize}
+        \item Implemented flat, Gouraud, and Phong shading
+        \item Parsed polgyons and vertices from OBJ files
+    \end{itemize}
+
+\end{longtable}
+
+\end{document}
