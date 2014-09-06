@@ -8,8 +8,7 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-%\usepackage{fullpage}
-\usepackage[margin=0.3in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
@@ -19,6 +18,8 @@
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\titlespacing{\subsection}{0pt}{10pt}{*0}
+\titlespacing{\paragraph}{0pt}{*0}{10pt}
 
 \usepackage{longtable}
 
@@ -33,7 +34,7 @@
 \par{\centering{
     67-62 Exeter St, Forest Hills, NY, 11375
     | \href{mailto:tenyoung795@gmail.com}{tenyoung795@gmail.com}
-    | 1-347-756-8608
+    | \href{tel:+1-347-756-8608}{+1-347-756-8608}
 }\par}
 \par{\centering{
     LinkedIn: \url{https://www.linkedin.com/profile/view?id=201881408}
@@ -50,8 +51,18 @@
     & \textbf{Bachelor of Science in Engineering} \\
     & 3.952/4.000 GPA, Dean's List \\
     & Relevant coursework: Computer Systems 1 to 3, Data Structures and Algorithms,
-    Ernst \& Young Trajectory Program \footnotesize{(a joint management-computer science program)} \\
+    Ernst \& Young Trajectory Program {\footnotesize (a joint management-computer science program)} \\
 \end{longtable}
+
+\section{Technical Skills}
+
+\paragraph{Programming Languages} C/C++(14), Java, Python, Objective-C, {\footnotesize bash, JavaScript, ActionScript, Go, Haskell}
+\paragraph{Platforms} Unix, iOS, Android
+\paragraph{Frameworks} Core Data, OCMock, Keep-It-Functional (KIF), JUnit, Spring
+\paragraph{Editors} IntelliJ, Eclipse, Vim {\footnotesize (preference of IntelliJ over Eclipse)}
+\paragraph{Version control} Git, Perforce
+
+Minimal skill in CSS and HTML
 
 \section{Internship Experience}
 
@@ -61,7 +72,7 @@
     & \begin{itemize}
         \item Implemented user interface using Google's Material design
         \item Persisted data onto the device using Core Data, Apple's standard data persistence framework
-        \item Tested user interface using Keep-It-Functional
+        \item Tested user interface using KIF
         \item Managed code using Git wrapper around Perforce
     \end{itemize} \\
 
@@ -89,6 +100,8 @@
 
     \multicolumn{2}{c}{} \\
 
+    \newpage
+
     July 2012-August 2012 & \textbf{Engineering Intern at Peek} \\
     New York, NY & \begin{itemize}
         \item Programmed an Android game in which you control a taxi driver in Delhi
@@ -96,7 +109,6 @@
     \end{itemize}
 \end{longtable}
 
-\newpage
 \section{Personal Team Projects}
 
 \begin{longtable}{r|p{4.5in}}
