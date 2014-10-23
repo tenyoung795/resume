@@ -16,9 +16,11 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+\titlespacing{\section}{0pt}{0pt}{3pt} % Spacing around sections
 \titlespacing{\subsection}{0pt}{0pt}{*0}
 \titlespacing{\paragraph}{0pt}{*0}{10pt}
+
+\usepackage{calc}
 
 \linespread{1}
 
@@ -38,24 +40,30 @@
     | GitHub: \url{http://github.com/tenyoung795}
 }\par}
 
-\section{Education}
-\begin{tabular}{@{}p{3in}l}
-    September 2012-May 2016 (expected) & \textbf{Binghamton University, State University of New York} \\
-    & \textbf{The Thomas J. Watson School of Engineering} \\
-    & \textbf{Bachelor of Science in Engineering}
-\end{tabular} \\
-3.952/4.000 GPA, 4.000/4.000 Major GPA, Dean's List \\
-Relevant coursework: Computer Systems 1 to 3, Data Structures and Algorithms,
-Ernst \& Young Trajectory Program {\footnotesize (a joint management-computer science program)}
+\begin{tabular}{ll}
+    \begin{minipage}[t]{3.5in}
+        \section{Education}
 
-\section{Technical Skills}
+        \textbf{Binghamton University, State University of New York} \\
+        \textbf{The Thomas J. Watson School of Engineering} \\
+        \textbf{Bachelor of Science in Engineering} \\
+        \textbf{September 2012-May 2016}
 
-\paragraph{Programming Languages} C/C++(14), Java, Python, Objective-C,
-    {\footnotesize bash, JavaScript, ActionScript, Go, Haskell, CSS, HTML}
-\paragraph{Platforms} Unix, iOS, Android
-\paragraph{Frameworks} Core Data, OCMock, Keep-It-Functional (KIF), JUnit, {\footnotesize Spring, Phaser}
-\paragraph{Editors} IntelliJ, Eclipse, vim {\footnotesize (preference of IntelliJ over Eclipse)}
-\paragraph{Version control} Git, Perforce
+        3.952/4.000 GPA, 4.000/4.000 Major GPA, Dean's List \\
+        Relevant coursework: Computer Systems 1 to 3, Data Structures and Algorithms,
+        Ernst \& Young Trajectory Program {\footnotesize (a joint management-computer science program)}
+    \end{minipage} &
+    \begin{minipage}[t]{3.75in}
+        \section{Technical Skills}
+
+        \paragraph{Programming Languages} C/C++(14), Java, Python, Objective-C,
+            {\footnotesize bash, JavaScript, ActionScript, Go, Haskell, CSS, HTML}
+        \paragraph{Platforms} Unix, iOS, Android
+        \paragraph{Frameworks} Core Data, OCMock, Keep-It-Functional (KIF), JUnit, {\footnotesize Spring, Phaser}
+        \paragraph{Editors} IntelliJ, Eclipse, vim {\footnotesize (preference of IntelliJ over Eclipse)}
+        \paragraph{Version control} Git, Perforce
+    \end{minipage}
+\end{tabular}
 
 \section{Internship Experience}
 \begin{tabular}{@{}p{3in}l}
