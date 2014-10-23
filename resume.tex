@@ -16,13 +16,9 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{0pt}{3pt} % Spacing around sections
-\titlespacing{\subsection}{0pt}{0pt}{*0}
+\titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+\titlespacing{\subsubsection}{0pt}{4pt}{4pt}
 \titlespacing{\paragraph}{0pt}{*0}{10pt}
-
-\usepackage{calc}
-
-\linespread{1}
 
 \begin{document}
 
@@ -36,19 +32,18 @@
     | \href{tel:+1-347-756-8608}{+1-347-756-8608}
 }\par}
 \par{\centering{
-    LinkedIn: \url{https://www.linkedin.com/profile/view?id=201881408}
-    | GitHub: \url{http://github.com/tenyoung795}
+    LinkedIn: {\footnotesize \url{https://www.linkedin.com/profile/view?id=201881408}}
+    | GitHub: {\footnotesize \url{http://github.com/tenyoung795}}
 }\par}
 
 \begin{tabular}{ll}
     \begin{minipage}[t]{3.5in}
         \section{Education}
 
-        \textbf{Binghamton University, State University of New York} \\
-        \textbf{The Thomas J. Watson School of Engineering} \\
-        \textbf{Bachelor of Science in Engineering} \\
-        \textbf{September 2012-May 2016}
-
+        \subsubsection*{Binghamton University, State University of New York \\
+        The Thomas J. Watson School of Engineering \\
+        Bachelor of Science in Engineering \\
+        September 2012-May 2016}
         3.952/4.000 GPA, 4.000/4.000 Major GPA, Dean's List \\
         Relevant coursework: Computer Systems 1 to 3, Data Structures and Algorithms,
         Ernst \& Young Trajectory Program {\footnotesize (a joint management-computer science program)}
@@ -65,98 +60,102 @@
     \end{minipage}
 \end{tabular}
 
-\section{Internship Experience}
-\begin{tabular}{@{}p{3in}l}
-    June 2014-August 2014; New York, NY & \textbf{Software-Engineer-in-Test Intern at Google}
-\end{tabular} \\
-Programmed version 0 of an iOS app
-\begin{itemize}
-    \item Implemented user interface using Google's Material design
-    \item Persisted data onto the device using Core Data, Apple's standard data persistence framework
-    \item Tested user interface using KIF
-    \item Managed code using Git wrapper around Perforce
-\end{itemize}
+\begin{tabular}{ll}
+    \begin{minipage}[t]{3.75in}
+        \section{Internship Experience}
+            \subsubsection*{Software-Engineer-in-Test Intern at Google \\
+            New York, NY; June 2014-August 2014}
+            Programmed version 0 of an iOS app
+            \begin{itemize}
+                \item Implemented user interface using Google's Material design
+                \item Persisted data onto the device using Core Data, Apple's standard data persistence framework
+                \item Tested user interface using KIF
+                \item Managed code using Git wrapper around Perforce
+            \end{itemize}
 
-\begin{tabular}{@{}p{3in}l}
-    June 2013-September 2013; Brooklyn, NY & \textbf{Software Engineering Intern at Energyhub}
-\end{tabular} \\
-\begin{itemize}
-    \item Programmed a proxy server for Carrier's thermostat API in Go
-    \item Implemented an endpoint for Carrier's theromstat API
-    \item
-        Implemented a Southern California Edison advertisement from a Spring thermostat server
-        to an Android thermostat app
-    \item
-        Integrated Carrier’s thermostat project programmed in Flex into a Jenkins environment;
-        implemented the project’s first unit test
-\end{itemize}
+            \subsubsection*{Software Engineering Intern at Energyhub \\
+            Brooklyn, NY; June 2013-September 2013}
+            \begin{itemize}
+                \item Programmed a proxy server for Carrier's thermostat API in Go
+                \item Implemented an endpoint for Carrier's theromstat API
+                \item
+                    Implemented a Southern California Edison advertisement from a Spring thermostat server
+                    to an Android thermostat app
+                \item
+                    Integrated Carrier’s thermostat project programmed in Flex into a Jenkins environment;
+                    implemented the project’s first unit test
+            \end{itemize}
 
-\begin{tabular}{@{}p{3in}l}
-    January 2013; New York, NY & \textbf{Programming Intern at Halo Neuro}
+            \subsubsection*{Programming Intern at Halo Neuro \\
+            New York, NY; January 2013}
+            \begin{itemize}
+                \item Began programming the iPhone app for the Halo headband
+                \item Programmed a reaction time game in Flash called React
+            \end{itemize}
+
+            \subsubsection*{Engineering Intern at Peek \\
+            New York, NY; July 2012-August 2012}
+
+            \begin{itemize}
+                \item Programmed an Android game in which you control a taxi driver in Delhi
+                \item Programmed the client-side of an app store in Lua for a MediaTek phone
+            \end{itemize}
+    \end{minipage} & \begin{minipage}[t]{3.5in}
+        \section{Team Hackathon Projects}
+
+            \subsubsection*{Feud \\
+            {\footnotesize \url{https://github.com/dogless/rhinefeud}} \\
+            BigRed, Cornell University; September 2014 - Present}
+
+            HTML5 game inspired by \em{Family Feud} using the Rhine API
+            \begin{itemize}
+                \item Programmatically handle text input over canvas
+                \item Animated and printed correct answers with points
+                \item Handled duplicate answers and incorrect answers
+            \end{itemize}
+
+            \subsubsection*{Crowdshop Android App \\
+            {\footnotesize \url{https://github.com/leeeonlee/crowdshop-app}} \\
+            Bitcamp, University of Maryland; April 2014-Present}
+
+            App to pay friends to shop for you
+            \begin{itemize}
+                \item Implemented most of user interface
+                \item Handled HTTP requests in the background using RoboSpice
+            \end{itemize}
+
+            \subsubsection*{Schedulizer \\
+            {\footnotesize \url{https://github.com/leeeonlee/fsched}} \\
+            HackBU, Binghamton University; April 2014}
+
+            Web app to assist Binghamton students plan their schedule; matched course references
+            \begin{itemize}
+                \item Matched a course's references by section
+                \item Matched lectures with the correct activity
+            \end{itemize}
+
+        \section{Individual University Projects}
+
+            \subsubsection*{Branch Predictor Simulator \\
+            {\footnotesize \url{https://github.com/tenyoung795/bu2016-cs320-project1}} \\
+            Computer Systems 3; March 2014}
+
+            Simulates various predictors, including YAGS
+            \begin{itemize}
+                \item Heaviliy utilized C++11 features such as type inference, lambdas, and variadic templates
+                \item Tested using Python script
+            \end{itemize}
+
+            \subsubsection*{Malloc Lab \\
+            {\footnotesize \url{https://github.com/tenyoung795/malloclab}} \\
+            Computer Systems 2; August 2013}
+
+            Implementation of heap memory management in C
+            \begin{itemize}
+                \item Segregated free lists by size
+                \item Doubly-linked free lists
+                \item Singly-linked heap blocks
+            \end{itemize}
+    \end{minipage}
 \end{tabular}
-\begin{itemize}
-    \item Began programming the iPhone app for the Halo headband
-    \item Programmed a reaction time game in Flash called React
-\end{itemize}
-
-\begin{tabular}{@{}p{3in}l}
-    July 2012-August 2012; New York, NY & \textbf{Engineering Intern at Peek}
-\end{tabular}
-\begin{itemize}
-    \item Programmed an Android game in which you control a taxi driver in Delhi
-    \item Programmed the client-side of an app store in Lua for a MediaTek phone
-\end{itemize}
-
-\section{Team Hackathon Projects}
-
-\begin{tabular}{@{}p{3in}l}
-    September 2014; BigRed, Cornell & \textbf{Feud} \footnotesize{\url{https://github.com/dogless/rhinefeud}}
-\end{tabular} \\
-HTML5 game inspired by \em{Family Feud} using the Rhine API
-\begin{itemize}
-    \item Programmatically handle text input over canvas
-    \item Animated and printed correct answers with points
-    \item Handled duplicate answers and incorrect answers
-\end{itemize}
-
-\begin{tabular}{@{}p{3in}l}
-    April 2014-Present; Bitcamp, UMD & \textbf{Crowdshop Android App} \footnotesize{\url{https://github.com/leeeonlee/crowdshop-app}}
-\end{tabular} \\
-Android app to pay friends to shop for you with an optional reward
-\begin{itemize}
-    \item Implemented most of user interface
-    \item Handled HTTP requests in the background using RoboSpice
-\end{itemize}
-
-\begin{tabular}{@{}p{3in}l}
-    April 2014; HackBU, SUNY Binghamton & \textbf{Schedulizer} \footnotesize{\url{https://github.com/leeeonlee/fsched}}
-\end{tabular} \\
-Web app to assist Binghamton students plan their schedule; matched course references
-\begin{itemize}
-    \item Matched a course's references by section
-    \item Matched lectures with the correct activity
-\end{itemize}
-
-\section{Individual University Projects}
-
-\begin{tabular}{@{}p{3in}l}
-    March 2014; Computer Systems 3 & \textbf{Branch Predictor Simulator} \\
-    & \footnotesize{\url{https://github.com/tenyoung795/bu2016-cs320-project1}}
-\end{tabular} \\
-Simulates various predictors, including the YAGS predictor
-\begin{itemize}
-    \item Heaviliy utilized C++11 features such as type inference, lambdas, and variadic templates
-    \item Tested using Python script
-\end{itemize}
-
-\begin{tabular}{@{}p{3in}l}
-    August 2013; Computer Systems 2 & \textbf{Malloc Lab} \footnotesize{\url{https://github.com/tenyoung795/malloclab}}
-\end{tabular} \\
-Implementation of heap memory management in C
-\begin{itemize}
-    \item Segregated free lists by size
-    \item Doubly-linked free lists
-    \item Singly-linked heap blocks
-\end{itemize}
-
 \end{document}
