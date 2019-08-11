@@ -6,3 +6,6 @@
 *.log
 *.out
 *.pdf
+.vscode
+*.synctex.gz
+*.xdv

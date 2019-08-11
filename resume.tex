@@ -27,9 +27,7 @@
 
 \par{\centering{\Huge Ten-Young Guh}\par} % Your name
 \par{\centering{
-    67-62 Exeter St, Forest Hills, NY, 11375
-    | \href{mailto:tenyoung795@gmail.com}{tenyoung795@gmail.com}
-    | \href{tel:+1-347-756-8608}{+1-347-756-8608}
+    \href{mailto:tenyoung795@gmail.com}{tenyoung795@gmail.com}
 }\par}
 \par{\centering{
     LinkedIn: {\footnotesize \url{https://www.linkedin.com/profile/view?id=201881408}}
@@ -37,51 +35,41 @@
 }\par}
 
 \begin{tabular}{ll}
-    \begin{minipage}[t]{3.5in}
-        \section{Education}
+    \begin{minipage}[t]{\textwidth}
+        \section{Professional Experience}
+            \subsubsection*{Software Engineer III at Google \\
+            New York, NY; July 2016--Present}
+            Worked on storage of provenance of structered knowledge data
+            servable to end users, particularly on Google Maps
 
-        \subsubsection*{Binghamton University, State University of New York \\
-        The Thomas J. Watson School of Engineering \\
-        BSE in Computer Science \\
-        September 2012--May 2016}
-        3.930 GPA, 3.970 Major GPA, Dean's List \\
-        Relevant coursework: Design \& Analysis of Algorithms,
-        Operating Systems, Automata Theory and Formal Languages,
-        Computer Systems 1 to 3, Data Structures and Algorithms%,
-%        Ernst \& Young Trajectory Program {\footnotesize (a joint management-computer science program)}
-    \end{minipage} &
-    \begin{minipage}[t]{3.75in}
-        \section{Technical Skills}
+            \begin{itemize}
+                \item Launched and maintaining database, snapshot pipelines, and Pub/Sub notifications for data provenance
+                \item Optimized global and parallelized backfills of data provenance
+                \item
+                    Designed first iteration of storing provenance of
+                    data for more general structured knowledge than Maps
+                \item Hosted intern to launch web app to debug data provenance
+                \item
+                    {\footnotesize (side project)} Contributed to fixing server infrastructure
+                    for notifying iOS users of the Google app
+            \end{itemize}
 
-        \paragraph{Programming Languages} C/C++(14), Java, Python, Objective-C, LaTeX, Haskell
-            {\footnotesize bash, JavaScript, ActionScript, CSS, HTML, Go}
-        \paragraph{Platforms} Unix, iOS, Android
-        \paragraph{Frameworks} Core Data, OCMock, Keep-It-Functional (KIF), JUnit, {\footnotesize Django, Spring, Phaser}
-        \paragraph{Editors} vim, IntelliJ, Eclipse {\footnotesize (preference of IntelliJ over Eclipse)}
-        \paragraph{Version control} Git, Perforce
-    \end{minipage}
-\end{tabular}
-
-\begin{tabular}{ll}
-    \begin{minipage}[t]{3.75in}
-        \section{Internship Experience}
             \subsubsection*{Software Engineering, Tools and Infrastructure Intern at Google \\
             Mountain View, CA; May--August 2015}
             Implemented a dashboard and alert system for a userdata store
+
             \begin{itemize}
                 \item Extended a Python script for computing the necessary stats
                 \item Extended an existing dashboard portal in Django
-                \item Added and updated Borg jobs
-                \item Implemented a MapReduce program for computing extra stats
             \end{itemize}
 
             \subsubsection*{Software Engineering Intern at Google \\
             New York, NY; June--August 2014}
-            Programmed version 0 of an iOS app
+            Programmed version 0 of iOS version of \href{https://apps.apple.com/us/app/creative-preview/id1031988940}{Creative Preview} app
+
             \begin{itemize}
                 \item Implemented user interface using Google's Material design
                 \item Persisted data onto the device using Core Data
-                \item Tested user interface using KIF
             \end{itemize}
 
             \subsubsection*{Software Engineering Intern at Energyhub \\
@@ -98,60 +86,37 @@
         \section{Research Experience}
             \subsubsection*{Operating Systems and Networks Lab \\
             Binghamton University, September 2014--Present}
-            Involved in a project to live-migrate Linux virtual machines efficiently
+            Worked on \href{http://osnet.cs.binghamton.edu/publications/deshpande16agile.pdf}{"Agile Live Migration of Virtual Machines"}
             \begin{itemize}
                 \item Revised paper
                 \item Implemented programs for experiments
                 \item Conducted experiments under QEMU with SysBench
             \end{itemize}
-    \end{minipage} & \begin{minipage}[t]{3.5in}
-        \section{Team Hackathon Projects}
-            \subsubsection*{Wee \\
-            {\footnotesize \url{https://github.com/tenyoung795/wee}} \\
-            BigRed, Cornell University; September 2015}
 
-            Web app (in progress) to plan a city trip and schedule Uber requests
-            \begin{itemize}
-                \item Implemented data models under Django
-                \item Scheduled Uber requests via the Uber REST API
-                \item Discovered hotels via the Priceline API
-            \end{itemize}
+        \section{Technical Skills}
+            \subsubsection*{Frameworks/technolgies}
+            Protocol Buffers,
+            Cloud Dataflow-esque data pipelines,
+            Spanner {\footnotesize (databases)},
+            Pub/Sub,
+            Guice {\footnotesize (dependency injection)}
 
-            \subsubsection*{Feud \\
-            {\footnotesize \url{https://github.com/dogless/rhinefeud}} \\
-            BigRed, Cornell University; September--October 2014}
+            \paragraph{Programming languages}
+            C/C++(11), Python, JavaScript, Go, Java, Objective-C
 
-            HTML5 game inspired by \em{Family Feud} using the Rhine API;
-            won second place at BigRed
-            \begin{itemize}
-                \item Handled text input over canvas
-                \item Animated and printed correct answers with points
-                \item Handled duplicate answers and incorrect answers
-            \end{itemize}
+            \paragraph{Platforms}
+            Unix, iOS, Android
 
-            \subsubsection*{Crowdshop Android App \\
-            {\footnotesize \url{https://github.com/leeonlee/crowdshop-app}} \\
-            Bitcamp, University of Maryland; April 2014}
+            \paragraph{Version control}
+            Git, Mercurial, Perforce
 
-            App to pay friends to shop for you
-            \begin{itemize}
-                \item Implemented most of user interface
-                \item Handled HTTP requests in the background using RoboSpice
-            \end{itemize}
+        \section{Education}
 
-        \section{Individual Projects}
-            \subsubsection*{Fork of JFLAP \\
-            {\footnotesize \url{https://github.com/tenyoung795/JFLAP}} \\
-            December 2014--Present}
-            
-            Fixed some bugs in JFLAP, the open-source education tool
-            for studying formal languages and automata theory
-            \begin{itemize}
-                \item Corrected parsing of Turing machine projects
-                \item Ensured (more) thread safety, particularly while rendering L-systems
-                \item Rendered L-systems over time
-                \item Properly enabled SVG exporting
-            \end{itemize}
+        \subsubsection*{The Thomas J. Watson School of Engineering \\
+        Binghamton University \\
+        BSE in Computer Science, September 2012--May 2016}
+        3.930 GPA, 3.970 Major GPA, Dean's List
     \end{minipage}
 \end{tabular}
+
 \end{document}
